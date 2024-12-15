@@ -1,0 +1,22 @@
+server:
+  port: 8086
+#app:
+# topic:
+#  name:
+#   fruits: FRUITS-TOPIC
+#   user-details: USER-DETAILS
+#   topic-partition-1: TOPIC-WITH-1PARTITION
+#   topic-partition-3: TOPIC-WITH-3PARTITION
+#spring:
+#  application:
+#    name: ProducerService
+#  kafka:
+#    bootstrap-servers:  localhost:9092
+#    properties:
+#      session:
+#        timeout:
+#          ms: 45000
+#    producer:
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      partitioner-class: com.test.config.RoundRobinPartitioner

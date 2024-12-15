@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-boot-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: producer-ms
+  template:
+    metadata:
+      labels:
+        app: producer-ms
+    spec:
+      containers:
+      - name: producer-ms-container
+        image: producer-ms:1.0
+        ports:
+        - containerPort: 8080
